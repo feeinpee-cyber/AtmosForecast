@@ -9,8 +9,8 @@ const parts = readdirSync(partsDir)
   .filter((name) => /^atmos-source\.\d{2}\.b64$/.test(name))
   .sort();
 
-if (parts.length !== 6) {
-  throw new Error(`Expected 6 source archive segments, found ${parts.length}`);
+if (parts.length !== 7) {
+  throw new Error(`Expected 7 source archive segments, found ${parts.length}`);
 }
 
 const encoded = parts.map((name) => readFileSync(resolve(partsDir, name), 'utf8').trim()).join('');

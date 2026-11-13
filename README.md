@@ -64,6 +64,6 @@ The CI frame-rate measurement is a reproducible regression check on a virtualize
    - Build output directory: `dist`
 4. Save and deploy.
 
-The TypeScript/React source archive is stored as 6 small Base64 segments in `source-parts/`. The `predev` and `prebuild` scripts reconstruct and extract it automatically before starting Vite or compiling.
+The TypeScript/React source archive is stored as 7 small Base64 segments in `source-parts/`. The `predev` and `prebuild` scripts reconstruct and extract it automatically before starting Vite or compiling.
 
 No API key is required for the Open-Meteo endpoints used in this project. Browser geolocation requires HTTPS in production (Cloudflare Pages provides HTTPS).
